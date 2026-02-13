@@ -1,10 +1,26 @@
 fn main(){
-    // the compiler will warn you if you have "i" but don't use it in the loop
-    for _ in 1..6 {
-        println!("Hello world");
+    println!("Hello world!");
+
+    let n = 5;
+
+    if n < 0 {
+        print!("{} is negative", n);
+    }
+    else if n > 0 {
+        print!("{} is positive", n);
+    }
+    else {
+        print!("{} is zero", n);
     }
 
-    for i in 1..6 {
-        println!("hello world {i}");
-    }
+    let big_n =
+        if n < 10 && n > -10 {
+            print!(", and is a small number, increase ten-fold");
+            10 * n
+        } else {
+            print!(", and is a big number, halve the number");
+            n / 2
+        }; // all let binding need this semicolon
+    
+        println!("{} -> {}", n, big_n);
 }
