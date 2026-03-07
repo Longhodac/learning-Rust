@@ -34,5 +34,6 @@ fn main(){
 
     // Values can be extracted from the tuple using tuple indexing.
     println!("Long tuple first value: {}", long_tuple.0);
+    println!("Long tuple second value: {}", long_tuple.1); println!("Long tuple second value: {}", long_tuple.1);
     println!("Long tuple second value: {}", long_tuple.1);
 }
