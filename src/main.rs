@@ -18,7 +18,7 @@ fn main(){
             print!(", and is a small number, increase ten-fold");
             10 * n
         } else {
-            print!(", and is a big number, halve the number");
+            print!(", and is a small number, halve the number");
             n / 2.2
         }; // all let binding need this semicolon
     
